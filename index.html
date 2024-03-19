@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador / Desencriptador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Encriptador / Desencriptador</h1>
+            <div class="options">
+                <textarea id="text" rows="4" placeholder="Introduce el texto aquí..."></textarea>
+                <div class="actions">
+                    <input type="radio" id="encrypt" name="action" value="encrypt">
+                    <label for="encrypt" class="encrypt-btn">Encriptar</label>
+                    <input type="radio" id="decrypt" name="action" value="decrypt">
+                    <label for="decrypt" class="decrypt-btn">Desencriptar</label>
+                </div>
+            </div>
+            <div class="result-box">
+                <h2>Texto Resultante</h2>
+                <textarea id="result" readonly></textarea>
+                <button onclick="copyText()"><i class="fas fa-copy"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
